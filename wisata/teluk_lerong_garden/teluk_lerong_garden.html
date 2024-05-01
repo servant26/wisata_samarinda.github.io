@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samarinda Tour</title>
+  <link rel="stylesheet" type="text/css" href="../template/template.css">
+  <link href="../../bootstrap-5.1.3-dist\css\bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container">
+    <header>
+      <div class="barca">
+        <div class="nav">
+          <span><a href="../../home/home.html">Home</a></span>
+          <span><a href="../../olahraga/olahraga.html">Tempat Olahraga</a></span>
+          <span><a href="../wisata.html">Objek Wisata</a></span>
+          <span><a href="../../kuliner/kuliner.html">Kuliner</a></span>
+          <span><a href="../../hotel/hotel.html">Hotel</a></span>
+          <span><a href="../../sosmed/sosmed.html">Sosial Media</a></span>
+          <a href="../../logout/login.html"><span class="unduh"></span></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="back">
+        <a href="../wisata.html"><img src="../../gambar/previous.png" height="40px"></a>
+    </div>
+
+    <div class="content">
+      <div class="materi">
+        <div class="judul">Teluk Lerong Garden</div>
+        <div class="isi">
+          <ol type="A">
+            <li>Lokasi
+              <br>
+            Lokasi destinasi ini terletak di Jalan R. E. Martadinata, Teluk Lerong Ilir, Samarinda Ulu, Kota Samarinda, Kalimantan Timur. Patokan yang bisa dijadikan acuan ialah berada tepat di samping SPBU.
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/teluk_lerong_garden2.jpg" height="350px">
+            </div><br><br>
+
+            <li>Harga Tiket
+              <br>
+              <p class="indented">Saat mengunjungi Teluk Lerong Garden, pengunjung akan merasa senang karena tarif masuk yang sangat terjangkau, hanya sebesar Rp 5.000. Harga tersebut memungkinkan pengunjung untuk menikmati keindahan alam yang ditawarkan oleh tempat ini. Namun, selain tarif masuk, ada juga biaya tambahan yang perlu diperhatikan, yaitu tarif parkir untuk kendaraan.</p>
+              
+              <p class="indented">Tarif parkir kendaraan di Teluk Lerong Garden bervariasi tergantung pada jenis kendaraan yang digunakan. Pengendara sepeda motor akan dikenakan tarif parkir sebesar Rp 2.000, sementara kendaraan roda empat akan dikenakan tarif parkir sebesar Rp 5.000. Dengan biaya parkir yang terjangkau, pengunjung dapat dengan nyaman memarkir kendaraan mereka dan menjelajahi area wisata dengan tenang.</p>
+            </li><br>
+
+            <li>Fasilitas yang disediakan
+              <br>
+              <p class="indented">Teluk Lerong Garden menyediakan fasilitas lengkap yang akan memastikan kenyamanan pengunjung. Area parkir yang luas memudahkan pengunjung dalam memarkir kendaraan. Selain itu, tersedia gazebo yang tersebar di sekitar area, tempat yang cocok untuk beristirahat dan menikmati pemandangan sekitar. Terdapat juga mushola, toilet, dan fasilitas lainnya yang dapat digunakan oleh pengunjung saat berkunjung ke destinasi wisata ini.</p>
+              
+              <p class="indented">Teluk Lerong Garden berkomitmen untuk memberikan pengalaman wisata yang memuaskan dengan menyediakan fasilitas yang lengkap. Dengan adanya fasilitas yang memadai, pengunjung dapat menikmati keindahan alam sambil merasa nyaman dan terlayani dengan baik.</p>
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/teluk_lerong_garden.jpg" height="350px">
+            </div><br>
+          </ol>
+          <button onclick="getLocationAndNavigate()" class="custom-button">Menuju Lokasi</button>
+        </div>
+      </div><br><br><br><br>
+    </div>
+
+  </div>
+</body>
+<script>
+    function getLocationAndNavigate() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          var currentPosition = latitude + "," + longitude;
+
+          var destination = "Teluk Lerong Garden"; // Ganti dengan tujuan yang diinginkan
+
+          var url = "https://www.google.com/maps/dir/" + currentPosition + "/" + destination;
+          window.open(url, "_blank");
+        });
+      } else {
+        alert("Geolocation tidak didukung oleh browser ini.");
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samarinda Tour</title>
+  <link rel="stylesheet" type="text/css" href="../template/template.css">
+  <link href="../../bootstrap-5.1.3-dist\css\bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container">
+    <header>
+      <div class="barca">
+        <div class="nav">
+          <span><a href="../../home/home.html">Home</a></span>
+          <span><a href="../../olahraga/olahraga.html">Tempat Olahraga</a></span>
+          <span><a href="../wisata.html">Objek Wisata</a></span>
+          <span><a href="../../kuliner/kuliner.html">Kuliner</a></span>
+          <span><a href="../../hotel/hotel.html">Hotel</a></span>
+          <span><a href="../../sosmed/sosmed.html">Sosial Media</a></span>
+          <a href="../../logout/login.html"><span class="unduh"></span></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="back">
+        <a href="../wisata.html"><img src="../../gambar/previous.png" height="40px"></a>
+    </div>
+
+    <div class="content">
+      <div class="materi">
+        <div class="judul">Kampung Tenun Samarinda</div>
+        <div class="isi">
+          <ol type="A">
+            <li>Daya Tarik
+              <br>
+              <p class="indented">Samarinda memiliki motif batik khas yang disebut Belang Hatta. Nama ini diambil dari kunjungan Bung Hatta ke Kampung Wisata Tenun saat menjabat sebagai Wakil Presiden RI. Motif Belang Hatta terkenal dan menjadi ciri khas Samarinda, namun kampung ini juga menghasilkan motif lain seperti Ayam Pelopo, Garanso, dan Burica.</p>
+
+              <p class="indented">Proses penenunan menggunakan benang impor dari China yang memiliki kualitas baik. Setelah ditenun, kain-kain ini diolah menjadi berbagai produk seperti baju, sarung, dan kopiah. Produk-produk tersebut tidak hanya dipasarkan di sekitar kampung, tetapi juga di negara-negara seperti Malaysia, Singapura, dan Thailand.</p>
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/kampung_tenun2.png" height="350px">
+            </div><br><br>
+
+            <li>Lokasi
+              <br>
+             Kampung ini terletak di Jalan Panglima Bendahara Samarinda Seberang tepatnya di tepian Sungai Mahakam. Untuk mencapai lokasi ini, kita dapat menggunakan kendaraan pribadi. Namun, perlu diperhatikan bahwa kendaraan besar seperti bus tidak diizinkan masuk ke dalam kampung, bus hanya dapat berhenti di depan gapura. Jika Anda menggunakan bus, Anda harus melanjutkan perjalanan sekitar 500 meter dengan berjalan kaki dari titik berhenti bus tersebut.
+            </li><br><br>
+
+            <li>Harga Kain
+              <br>
+              Harga kain tenun Samarinda bervariasi tergantung pada motif yang digunakan. Kain tenun dengan motif dayak dapat dibeli dengan harga sekitar 1,2 juta rupiah. Harga ini merupakan refleksi yang pantas untuk sebuah karya seni yang memiliki nilai sejarah yang tinggi, yang dihasilkan dengan kerajinan oleh para ibu penenun.
+
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/kampung_tenun.png" height="350px">
+            </div><br>
+          </ol>
+          <button onclick="getLocationAndNavigate()" class="custom-button">Menuju Lokasi</button>
+        </div>
+      </div><br><br><br><br>
+    </div>
+
+  </div>
+</body>
+<script>
+    function getLocationAndNavigate() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          var currentPosition = latitude + "," + longitude;
+
+          var destination = "Kampung Tenun"; // Ganti dengan tujuan yang diinginkan
+
+          var url = "https://www.google.com/maps/dir/" + currentPosition + "/" + destination;
+          window.open(url, "_blank");
+        });
+      } else {
+        alert("Geolocation tidak didukung oleh browser ini.");
+      }
+    }
+  </script>
+</html>

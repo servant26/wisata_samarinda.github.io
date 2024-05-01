@@ -1,0 +1,102 @@
+header{
+  background-color: rgba(38,34,34,1);
+  margin-left: -12%;
+  opacity: 0.9;
+  color: white;
+  padding : 1px;
+  font-family: arial;
+}
+
+.barca{
+  display: flex;
+  justify-content: end;
+  margin-right: -1%;
+  align-items: center;
+  margin-left: 100px;
+  height: 100px;
+}
+
+*{
+  margin : 0;
+}
+
+body {
+    background-color: #8394a3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -450px;
+    height: 100vh; /* Mengatur tinggi body menjadi tinggi viewport */
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+.unduh{
+  background-color: #ffcc0c;
+  padding: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 102px;
+  width: 120px;
+}
+
+.unduh:hover{
+  background-color: rgba(254,191,0,1);
+}
+
+.nav{
+  font-family: arial;
+  padding: 10px;
+}
+
+.nav a{
+  margin-left: 25px;
+  padding: 15px;
+  padding-bottom: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  text-shadow: 2px 2px 5px orange;
+  color: white;
+}
+
+.content{
+  margin-top: 4%;
+}
+
+.author{
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.circle-border {
+    border-radius: 100%;
+}
+
+.pp {
+  transition: transform 2s;
+  margin-bottom: -2%;
+}
+
+.pp:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.sosmed{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.image-link:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;   
+}

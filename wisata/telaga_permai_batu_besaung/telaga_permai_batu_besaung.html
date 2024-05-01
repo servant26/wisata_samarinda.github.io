@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samarinda Tour</title>
+  <link rel="stylesheet" type="text/css" href="../template/template.css">
+  <link href="../../bootstrap-5.1.3-dist\css\bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container">
+    <header>
+      <div class="barca">
+        <div class="nav">
+          <span><a href="../../home/home.html">Home</a></span>
+          <span><a href="../../olahraga/olahraga.html">Tempat Olahraga</a></span>
+          <span><a href="../wisata.html">Objek Wisata</a></span>
+          <span><a href="../../kuliner/kuliner.html">Kuliner</a></span>
+          <span><a href="../../hotel/hotel.html">Hotel</a></span>
+          <span><a href="../../sosmed/sosmed.html">Sosial Media</a></span>
+          <a href="../../logout/login.html"><span class="unduh"></span></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="back">
+        <a href="../wisata.html"><img src="../../gambar/previous.png" height="40px"></a>
+    </div>
+
+    <div class="content">
+      <div class="materi">
+        <div class="judul">Telaga Permai Batu Besaung</div>
+        <div class="isi">
+          <ol type="A">
+            <li>Lokasi
+              <br>
+             Telaga ini terletak di Desa Sempaja, Kota Samarinda, Kalimantan Timur. Jika berangkat dari Kota Samarinda, diperlukan perjalanan sekitar 15 km untuk mencapai kawasan wisata tersebut.
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/telaga_permai_batu_besaung2.jpg" height="350px">
+            </div><br>
+
+            <li>Harga Tiket Masuk
+              <br>
+              <p class="indented">Anda tidak perlu khawatir tentang anggaran liburan saat mengunjungi Telaga Permai Batu Besaung, karena tempat ini tidak akan membuat kantong Anda kosong. Pihak pengelola hanya menarik biaya tiket masuk sekitar Rp 5.000 per orang. Dengan harga tiket tersebut, Anda sudah dapat menikmati keindahan alamnya dengan puas. Bahkan, Anda juga dapat berkemah dengan harga yang terjangkau di sana.</p>
+
+              <p class="indented">Bagi pengunjung yang membawa kendaraan pribadi, umumnya akan dikenakan biaya parkir. Oleh karena itu, disarankan untuk membawa sedikit lebih banyak uang sebagai langkah pencegahan jika terjadi pengeluaran mendadak. Namun, perlu diingat bahwa harga tiket masuk dapat berubah sewaktu-waktu, jadi penting untuk memperhatikan informasi terbaru sebelum mengunjungi tempat ini.</p>
+
+            </li><br>
+
+            <li>Fasilitas yang disediakan
+              <br>
+              <p class="indented">Sama halnya seperti wisata alam populer lainnya, Telaga Permai Batu Besaung juga menawarkan sejumlah fasilitas untuk memenuhi kebutuhan pengunjung, Salah satu fasilitas yang terletak dekat dengan pintu masuk adalah gedung pusat milik pengelola Telaga Permai Batu Besaung. Di sekitar gedung tersebut, terdapat area parkir yang luas, ini dapat memudahkan pengunjung yang datang dari jauh untuk memarkirkan kendaraan mereka tanpa khawatir.</p>
+              
+              <p class="indented">Telaga Permai Batu Besaung menawarkan area berkemah yang populer di kalangan pengunjung. Terletak dekat hutan dan air terjun, area ini memungkinkan pengunjung untuk menikmati alam dan suara gemericik air yang menenangkan. Fasilitas ini menjadi daya tarik utama Telaga Permai Batu Besaung dan menarik wisatawan dari berbagai daerah.</p>
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/telaga_permai_batu_besaung.jpg" height="350px">
+            </div><br>
+          </ol>
+          <button onclick="getLocationAndNavigate()" class="custom-button">Menuju Lokasi</button>
+        </div>
+      </div><br><br><br><br>
+    </div>
+
+  </div>
+</body>
+<script>
+    function getLocationAndNavigate() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          var currentPosition = latitude + "," + longitude;
+
+          var destination = "Telaga Permai Batu Besaung"; // Ganti dengan tujuan yang diinginkan
+
+          var url = "https://www.google.com/maps/dir/" + currentPosition + "/" + destination;
+          window.open(url, "_blank");
+        });
+      } else {
+        alert("Geolocation tidak didukung oleh browser ini.");
+      }
+    }
+  </script>
+</html>

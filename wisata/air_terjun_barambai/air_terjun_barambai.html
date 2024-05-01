@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Samarinda Tour</title>
+  <link rel="stylesheet" type="text/css" href="../template/template.css">
+  <link href="../../bootstrap-5.1.3-dist\css\bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container">
+    <header>
+      <div class="barca">
+        <div class="nav">
+          <span><a href="../../home/home.html">Home</a></span>
+          <span><a href="../../olahraga/olahraga.html">Tempat Olahraga</a></span>
+          <span><a href="../wisata.html">Objek Wisata</a></span>
+          <span><a href="../../kuliner/kuliner.html">Kuliner</a></span>
+          <span><a href="../../hotel/hotel.html">Hotel</a></span>
+          <span><a href="../../sosmed/sosmed.html">Sosial Media</a></span>
+          <a href="../../logout/login.html"><span class="unduh"></span></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="back">
+        <a href="../wisata.html"><img src="../../gambar/previous.png" height="40px"></a>
+    </div>
+
+    <div class="content">
+      <div class="materi">
+        <div class="judul">Air Terjun Berambai</div>
+        <div class="isi">
+          <ol type="A">
+            <li>Lokasi
+              <br>
+             Untuk mencapai Air Terjun Berambai, kita perlu menuju ke Sempaja Ujung atau Batu Besaung, Samarinda, Kalimantan Timur. Setelah itu, ikuti jalan yang mengarah ke daerah Berambai yang terletak di daerah Sempaja. Di sepanjang perjalanan, kita akan menemui pertigaan yang mengarah ke Berambai dan Sempaja Ujung. Dari pertigaan tersebut, jarak menuju lokasi wisata adalah sejauh 20 km.
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/air_terjun_barambai2.jpg" height="350px">
+            </div><br><br>
+
+            <li>Harga Tiket Masuk
+              <br>
+              <p class="indented">Air terjun ini merupakan salah satu destinasi wajib yang harus dikunjungi di Kota Samarinda, karena selain keindahannya, harga tiket masuknya juga sangat terjangkau. Pada hari kerja atau hari libur, harga tiketnya hanya sebesar Rp 15.000.</p>
+              
+              <p class="indented">Namun, jika Anda dan keluarga mengunjungi pada akhir pekan, harga tiketnya kemungkinan akan lebih tinggi dari biasanya. Air terjun ini sudah memiliki call center, jadi jika Anda ingin mendapatkan informasi terbaru, Anda dapat menghubungi call center tersebut. Secara umum, harga tiketnya adalah Rp 15.000 untuk hari Senin hingga Jumat, dan Rp 20.000 untuk Sabtu dan Minggu.</p>
+
+            </li><br>
+
+            <li>Fasilitas yang disediakan
+              <br>
+              Di tempat ini, pengunjung juga dapat menemukan berbagai fasilitas lain, seperti warung makan. Di tempat ini, terdapat banyak warung kecil yang menawarkan berbagai jenis makanan dan minuman dengan harga yang terjangkau. kita dapat menemukan pilihan makanan yang beragam di warung-warung tersebut, sehingga dapat memuaskan selera makan setelah aktivitas bermain air.
+            </li>
+            <div class="gambar-container">
+              <img src="../../gambar/air_terjun_barambai.jpg" height="350px">
+            </div><br>
+          </ol>
+          <button onclick="getLocationAndNavigate()" class="custom-button">Menuju Lokasi</button>
+        </div>
+      </div><br><br><br><br>
+    </div>
+
+  </div>
+</body>
+<script>
+    function getLocationAndNavigate() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+          var currentPosition = latitude + "," + longitude;
+
+          var destination = "Air Terjun Barambai"; // Ganti dengan tujuan yang diinginkan
+
+          var url = "https://www.google.com/maps/dir/" + currentPosition + "/" + destination;
+          window.open(url, "_blank");
+        });
+      } else {
+        alert("Geolocation tidak didukung oleh browser ini.");
+      }
+    }
+  </script>
+</html>

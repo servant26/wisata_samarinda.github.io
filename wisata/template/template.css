@@ -1,0 +1,126 @@
+header{
+  background-color: rgba(38,34,34,1);
+  margin-left: -12%;
+  opacity: 0.9;
+  color: white;
+  padding : 1px;
+  font-family: arial;
+}
+
+.barca{
+  display: flex;
+  justify-content: end;
+  margin-right: -1%;
+  align-items: center;
+  margin-left: 100px;
+  height: 100px;
+}
+
+*{
+  margin : 0;
+}
+
+body {
+    background-image: url('../gambar/desa_budaya_pampang.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -360px;
+    height: 100vh; /* Mengatur tinggi body menjadi tinggi viewport */
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    backdrop-filter: blur(4px); /* Nilai blur dapat disesuaikan */
+}
+
+.unduh{
+  background-color: #ffcc0c;
+  padding: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 102px;
+  width: 120px;
+}
+
+.unduh:hover{
+  background-color: rgba(254,191,0,1);
+}
+
+.nav{
+  font-family: arial;
+  padding: 10px;
+}
+
+.nav a{
+  margin-left: 25px;
+  padding: 15px;
+  padding-bottom: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  text-shadow: 2px 2px 5px orange;
+  color: white;
+}
+
+.content{
+  margin-top: 7%;
+}
+
+.materi{
+    height: 320vh;
+    padding: 12%;
+    padding-top: 9%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin-top: -3%;
+}
+
+
+.judul{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.isi{
+    margin-top: 6%;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.gambar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Sesuaikan dengan jarak dari atas yang diinginkan */
+}
+
+.back{
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+.indented {
+    text-indent: 4%; /* Sesuaikan nilai indentasi sesuai kebutuhan */
+  }
+
+.custom-button {
+  background-color: #1F70FF;
+  border: none;
+  color: white;
+  padding: 10px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 7%;
+  margin-left: 84%;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.custom-button:hover {
+  background-color: #1F20FF;
+}

@@ -1,0 +1,159 @@
+header{
+  background-color: rgba(38,34,34,1);
+  margin-left: -12%;
+  opacity: 0.9;
+  color: white;
+  padding : 1px;
+  font-family: arial;
+}
+
+.barca{
+  display: flex;
+  justify-content: end;
+  margin-right: -1%;
+  align-items: center;
+  margin-left: 100px;
+  height: 100px;
+}
+
+*{
+  margin : 0;
+}
+
+body {
+    background-image: url('../gambar/kuliner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -350px;
+    height: 100vh; /* Mengatur tinggi body menjadi tinggi viewport */
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    backdrop-filter: blur(5px); /* Nilai blur dapat disesuaikan */
+}
+
+.unduh{
+  background-color: #ffcc0c;
+  padding: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 102px;
+  width: 120px;
+}
+
+.unduh:hover{
+  background-color: rgba(254,191,0,1);
+}
+
+.nav{
+  font-family: arial;
+  padding: 10px;
+}
+
+.nav a{
+  margin-left: 25px;
+  padding: 15px;
+  padding-bottom: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  text-shadow: 2px 2px 5px orange;
+  color: white;
+}
+
+.content{
+  margin-top: 10%;
+}
+
+.sambutan{
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.card{
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px -4px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 51px -36px rgba(0,0,0,1);
+}
+
+.kartu{
+  color: black;
+  margin-top: 30%;
+}
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        object-fit: cover;
+        height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .card p {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .form-control {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .pagination {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .pagination li {
+        display: inline;
+        margin-right: 5px;
+    }
+
+    .pagination li a {
+        padding: 5px 10px;
+        text-decoration: none;
+        background-color: #ddd;
+        color: #333;
+    }
+
+    .pagination li a:hover {
+        background-color: #333;
+        color: #fff;
+    }
